@@ -36,5 +36,4 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteCond %{ENV:HTTPS} !=on
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
-RequestHeader set X-Forwarded-Proto https env=HTTPS
-                                                                                                                                                                 15,0-1        Top
+RequestHeader set X-Forwarded-Proto https env=HTTPS                                                                                                       15,0-1
