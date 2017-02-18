@@ -2,7 +2,7 @@
 # Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 
 # Prevent browsers from incorrectly detecting non-scripts as scripts
-# Header always set X-Content-Type-Options nosniff
+Header always set X-Content-Type-Options nosniff
 
 # Block pages from loading when they detect reflected XSS attacks
 # Header always set X-XSS-Protection "1; mode=block"
