@@ -6,25 +6,26 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Awesome Site Title
-email: your-email@domain.com
+title: jbspeakr.cc
+email: jan@brennenstuhl.me
 description: >
-  Awesome site description here
-logo: "/assets/images/logo.jpg"
+  Jan Brennenstuhl about application security, web identity management & authorization concepts.
+  With info about OAuth, open web as well as tips around clean code and software development.
+logo: "/assets/images/jbspeakr-logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://www.jbspeakr.cc" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
-name: 'Your Name'
+name: 'Jan Brennenstuhl'
 bio: >
-  Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
-  Ne solet nostrum complectitur pri, vis ut inani populo.
-author_image: "/assets/images/author.jpg"
-twitter_username: jekyllrb
-github_username:  jekyll
+  Jan is a full-stack web developer, computer security enthusiast &amp; clean code artist.
+  He lives in Berlin, is currently working for Zalando SE and loves urban art, coffee &amp; cycling.
+author_image: "/assets/images/jan-brennenstuhl.jpg"
+twitter_username: jbspeakr
+github_username:  jbspeakr
 
 # Google Analytics
-analytics_id: ""
+analytics_id: "UA-36462674-4"
 
 # Build settings
 markdown: kramdown
@@ -32,5 +33,10 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
 
+jekyll-minifier:
+  exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+
 gems:
+  - jekyll-minifier
+  - jekyll-sitemap
   - jekyll-paginate

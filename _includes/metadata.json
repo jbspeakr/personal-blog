@@ -7,10 +7,6 @@
   "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
   "dateModified": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
   "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ site.name }}"
-  },
   "publisher": {
     "@type": "Organization",
     "name": "{{ site.title }}",
@@ -20,6 +16,21 @@
       "width": "60",
       "height": "60"
     }
+  },
+  "author": {
+      "@type": "Person",
+      "name": "{{ site.name }}",
+      "image": {
+          "@type": "ImageObject",
+          "url": "{{ site.author_image }}",
+          "width": "215",
+          "height": "215"
+      },
+      "sameAs": [
+          "http://jan.brennenstuhl.me",
+          "https://twitter.com/jbspeakr"
+      ],
+      "description": "{{ site.bio }}"
   },
   "image": {
     "@type": "ImageObject",
