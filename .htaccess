@@ -1,0 +1,40 @@
+# Only connect to this site and subdomains via HTTPS for the next two years and also include in the preload list
+# Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+# Prevent browsers from incorrectly detecting non-scripts as scripts
+# Header always set X-Content-Type-Options nosniff
+
+# Block pages from loading when they detect reflected XSS attacks
+# Header always set X-XSS-Protection "1; mode=block"
+
+# Block site from being framed with X-Frame-Options and CSP
+# Header always set Content-Security-Policy "frame-ancestors 'none'"
+# Header always set X-Frame-Options "deny"
+
+# Header always set Referrer-Policy "no-referrer"
+
+Redirect 301 /2016/01/18/aws-dynamodb-backup-recovery.html https://www.jbspeakr.cc/aws-dynamodb-backup-recovery/
+Redirect 301 /2015/12/21/aws-cloudformation-sucks.html https://www.jbspeakr.cc/why-aws-cloudformation-sucks/
+Redirect 301 /2015/04/28/python-tuple-list-dictionary.html https://www.jbspeakr.cc/howto-convert-tuplelist-dictionary/
+Redirect 301 /2016/03/24/microservice-evolution.html https://www.jbspeakr.cc/microservice-evolution/
+Redirect 301 /jan-brennenstuhl/2016/01/18/aws-dynamodb-backup-recovery.html/ https://www.jbspeakr.cc/aws-dynamodb-backup-recovery/
+Redirect 301 /2015/04/15/svn-git-history-authors.html https://www.jbspeakr.cc/howto-convert-svn-git/
+Redirect 301 /2015/03/18/cloud-privacy-aws-monocyte.html https://www.jbspeakr.cc/aws-cloud-immune-system/
+Redirect 301 /2013/05/21/principle-of-data-economy.html https://www.jbspeakr.cc/principle-data-economy/
+Redirect 301 /aws-cloudformation-sucks/ https://www.jbspeakr.cc/why-aws-cloudformation-sucks/
+Redirect 301 /python-tuple-list-dictionary/ https://www.jbspeakr.cc/howto-convert-tuplelist-dictionary/
+Redirect 301 /2015/03/25/github-license-checker.html/ https://www.jbspeakr.cc/github-license-checker/
+Redirect 301 /2016/01/18/aws-dynamodb-backup-recovery.html/ https://www.jbspeakr.cc/aws-dynamodb-backup-recovery/
+
+# BEGIN GZIP
+<FilesMatch "\\.(js|css|html|htm|php|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+# END GZIP
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{ENV:HTTPS} !=on
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+RequestHeader set X-Forwarded-Proto https env=HTTPS
+                                                                                                                                                                 15,0-1        Top
