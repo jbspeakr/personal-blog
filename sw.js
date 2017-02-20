@@ -9,7 +9,7 @@ var config = {
   staticCacheItems: [
     '/',
     '/assets/images/jan-brennenstuhl.jpg',
-    '/assets/images/jbspeakr-logo.jpg'
+    '/assets/images/jbspeakr-logo.png'
   ],
   cachePathPattern: /^(?:(\/sw.js|\/sitemap.xml|\/feed.xml))?$/,
   offlineImage: '<svg role="img" aria-labelledby="offline-title"'

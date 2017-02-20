@@ -11,7 +11,7 @@ email: jan@brennenstuhl.me
 description: >
   Jan Brennenstuhl about application security, web identity management & authorization concepts.
   With info about OAuth, open web as well as tips around clean code and software development.
-logo: "/assets/images/jbspeakr-logo.jpg"
+logo: "/assets/images/jbspeakr-logo.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jbspeakr.cc" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
