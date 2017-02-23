@@ -34,8 +34,10 @@ kramdown:
   parse_block_html: true
 
 jekyll-minifier:
-  exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
-
+  exclude:
+    - 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+    - '.htaccess'
+    
 gems:
   - jekyll-minifier
   - jekyll-sitemap
