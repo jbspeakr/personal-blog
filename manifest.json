@@ -1,5 +1,10 @@
 {
- "name": "App",
+ "name": "Clean Code. Web. Security. - jbspeakr.cc",
+ "short_name": "jbspeakr.cc",
+ "start_url": "/",
+ "background_color": "#FFFFFF",
+ "theme_color": "#FFFFFF",
+ "display": "browser",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",

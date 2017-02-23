@@ -1,17 +1,17 @@
 # Only connect to this site and subdomains via HTTPS for the next two years and also include in the preload list
-# Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 
 # Prevent browsers from incorrectly detecting non-scripts as scripts
 Header always set X-Content-Type-Options nosniff
 
 # Block pages from loading when they detect reflected XSS attacks
-# Header always set X-XSS-Protection "1; mode=block"
+Header always set X-XSS-Protection "1; mode=block"
 
 # Block site from being framed with X-Frame-Options and CSP
-# Header always set Content-Security-Policy "frame-ancestors 'none'"
-# Header always set X-Frame-Options "deny"
+Header always set Content-Security-Policy "frame-ancestors 'none'"
+Header always set X-Frame-Options "deny"
 
-# Header always set Referrer-Policy "no-referrer"
+Header always set Referrer-Policy "no-referrer"
 
 Redirect 301 /2016/01/18/aws-dynamodb-backup-recovery.html https://www.jbspeakr.cc/aws-dynamodb-backup-recovery/
 Redirect 301 /2015/12/21/aws-cloudformation-sucks.html https://www.jbspeakr.cc/why-aws-cloudformation-sucks/
