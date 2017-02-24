@@ -9,8 +9,7 @@
 title: jbspeakr.cc
 email: jan@brennenstuhl.me
 description: >
-  Jan Brennenstuhl about application security, web identity management & authorization concepts.
-  With info about OAuth, open web as well as tips around clean code and software development.
+  Jan Brennenstuhl about application security, identity management & authorization concepts. With opinions about OAuth, JWT and clean code web development.
 logo: "/assets/images/jbspeakr-logo.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jbspeakr.cc" # the base hostname & protocol for your site
@@ -37,7 +36,7 @@ jekyll-minifier:
   exclude:
     - 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
     - '.htaccess'
-    
+
 gems:
   - jekyll-minifier
   - jekyll-sitemap

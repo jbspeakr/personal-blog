@@ -294,13 +294,12 @@ body {
       text-align:left;
     }
     p {
-      font-weight: 400;
+      font-weight: 300;
       font-style: normal;
       font-size: 22px;
       line-height: 1.59;
       letter-spacing: -.002em;
-      margin-top: 30px;
-      margin-bottom: 0;
+      margin: 30px 0;
       color: #333333;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
@@ -315,7 +314,7 @@ body {
     }
     figure {
       margin: 0;
-      padding: 0 0 30px;
+      padding: 0;
     }
     figcaption {
       font-weight: 400;
@@ -351,14 +350,14 @@ body {
       }
     }
     ul, ol {
-      padding: 0 0 30px;
+      padding: 0;
       margin: 0;
     }
     li {
       padding: 0;
-      font-weight: 400;
+      font-weight: 300;
       font-style: normal;
-      font-size: 23px;
+      font-size: 22px;
       line-height: 30px;
       margin-left: 30px;
       margin-bottom: 12px;
@@ -492,7 +491,6 @@ body {
     }
   }
 }
-
 
 pre,
 code {
