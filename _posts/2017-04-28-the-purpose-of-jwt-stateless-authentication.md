@@ -70,7 +70,7 @@ However there again is no silver bullet and JWTs ain’t Swiss army knifes. Also
 
 Anyway, you probably shouldn't mix both approaches. To shortly answer the questions above:
 
-- There is no way of invalidating a JWT, expect if you just use it as yet another random string within a stateful authenticating system,
+- There is no way of invalidating a JWT, except if you just use it as yet another random string within a stateful authenticating system,
 - There is no way of altering an issued JWT, so prolongating its expiration date is again not possible.
 - You could use JWTs if they really help you solving your issues. You don't have to use them. You can also keep your opaque tokens.
 
