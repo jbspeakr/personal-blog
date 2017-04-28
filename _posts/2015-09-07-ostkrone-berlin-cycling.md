@@ -4,6 +4,7 @@ title: Ostkrone - Berlin Cycling Route
 permalink: ostkrone-berlin-cycling-route/
 description: Riding my bike through the sun along Berlins Crown of the East.
 image: http://lorempixel.com/600/300/people
+category: cycling
 ---
 
 Berlin City is not a great spot for racing bikes, road bikes or bikes in general, but as soon as you get further to the outskirts or suburbs it gets better and better. You can even find cycling routes consisting almost entirely of proper bike lanes and low-traffic country roads. They cross sleepy villages, pass by wide farming land and in that way make you forget all the hassle with the cities car traffic...

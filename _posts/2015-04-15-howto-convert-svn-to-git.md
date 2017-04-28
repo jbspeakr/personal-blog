@@ -3,6 +3,7 @@ layout: post
 title: Howto Convert SVN to GIT
 permalink: howto-convert-svn-git/
 description: A small step-by-step example on how to move your source code from SVN to GIT.
+category: coding
 ---
 
 Today I'd like to share my solution for a common problem a lot of IT companies experience when finally moving from Subversion (SVN) to Git as their central version control system (VCS): Converting a SVN repository into a Git repo including its commit history and authors.

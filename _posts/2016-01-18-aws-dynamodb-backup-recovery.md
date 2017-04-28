@@ -4,6 +4,7 @@ title: 'AWS DynamoDB: Backup & Recovery'
 permalink: aws-dynamodb-backup-recovery/
 description: How to Backup AWS DynamoDB?! Orchestrating DynamoDB with Datapipelines, S3 and Lambdas to establish daily backup and simple staging.
 image: /assets/feature/database-architecture.png
+category: cloud
 ---
 
 _"Amazon DynamoDB is a fully managed NoSQL database service [...]"_. That's what Amazon states in the [DynamoDB FAQs](https://aws.amazon.com/dynamodb/faqs/). However, their definition is not quite what I would understand as fully managed. It's missing counter-measures against the human error. For that reason, we need a DynamoDB backup and recovery solution, our DynamoDB safety-net...

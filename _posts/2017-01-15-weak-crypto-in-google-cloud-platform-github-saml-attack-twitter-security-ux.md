@@ -4,6 +4,8 @@ title: Weak Crypto in Google Cloud Platform, Github SAML Attack & Twitter Securi
 permalink: weak-google-crypto-github-saml/
 description:
 image: /assets/images/twitter-security-ux.jpg
+category: readme
+last_modified_at: "2017-04-08"
 ---
 
 Finally, I managed to come up with a name for my regular reading tips series which will feature both, latest info around recent events & incidents (especially when it comes to identity and security topics) as well as long running articles I strongly advice to read... it's simply called **Readme**.
@@ -18,6 +20,8 @@ I am not quite done reading it, but one interesting catch so far is that Google 
 > “KeyCzar has some known security issues which may influence your decision to use it.”
 
 One of the known issues is the usage of 1024 bit DSA keys with SHA1... nothing more to add, I believe.
+
+**Update 08.04.2017:** As Tim Dierks (Security at Google) let me know [via Twitter](https://twitter.com/tdierks/status/850830488340189184), _"the use of the term 'KeyCzar' was an error in the first release of the white paper"_ that got already removed. _"We do not rely on the open-source lib [KeyCzar, editor's note] internally and its disclaimers do not apply to GCP"_, [he clarified](https://twitter.com/tdierks/status/850830670087806976).
 
 ## GitHub SAML Vulnerability
 January 12th, a critical security patch was rolled out for Github Enterprise. In accordance to the [official release notes](https://enterprise.github.com/releases/2.8.6/notes), it fixes a major issue that allowed the bypass SAML authentication which was found and reported by [Ioannis Kakavas](https://twitter.com/ilektrojohn/status/819919288215760897). Github strongly advices to update asap!

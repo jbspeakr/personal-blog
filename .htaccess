@@ -26,11 +26,13 @@ Redirect 301 /python-tuple-list-dictionary/ https://www.jbspeakr.cc/howto-conver
 Redirect 301 /2015/03/25/github-license-checker.html/ https://www.jbspeakr.cc/github-license-checker/
 Redirect 301 /2016/01/18/aws-dynamodb-backup-recovery.html/ https://www.jbspeakr.cc/aws-dynamodb-backup-recovery/
 
-# BEGIN GZIP
 <FilesMatch "\\.(js|css|html|htm|php|xml)$">
 SetOutputFilter DEFLATE
 </FilesMatch>
-# END GZIP
+
+<FilesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
 
 RewriteEngine On
 RewriteCond %{HTTPS} !=on

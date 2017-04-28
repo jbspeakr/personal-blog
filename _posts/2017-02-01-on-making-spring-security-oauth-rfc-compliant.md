@@ -6,6 +6,8 @@ description: >
   On Fixing Spring Security OAuth: I fixed a small HTTP header extractor for the Spring Security OAuth open source project recently.
   Here's what happened & what I learned...
 image: /assets/feature/spring-security-oauth-source-code.png
+category: coding
+last_modified_at: "2017-02-16"
 ---
 
 Often supporting open source software is just fixing one tiny thing you stumbled upon. However, getting ready and diving into even the smallest piece of source-code can lead to surprising results. I fixed a small HTTP header extractor for the [Spring Security OAuth](https://github.com/spring-projects/spring-security-oauth) project recently. Here's what happened.
@@ -34,7 +36,7 @@ That thought lead me to try again. This time I cloned the Spring Security OAuth 
 
 So, if you plan to support a project that is out there for a while, keep in mind to leave all your fancy tooling at home. Also try to read and follow the projects code and style guidelines before receiving requests for change in your pull-requests.
 
-Of course, as with anything around the globe, [there is even more to this than meet the eye](https://github.com/spring-projects/spring-security-oauth/blob/master/CODE_OF_CONDUCT.adoc). However, this was [my resulting pull request](https://github.com/spring-projects/spring-security-oauth/pull/895) and it is waiting to get merged.
+Of course, as with anything around the globe, [there is even more to this than meet the eye](https://github.com/spring-projects/spring-security-oauth/blob/master/CODE_OF_CONDUCT.adoc). However, this was [my resulting pull request](https://github.com/spring-projects/spring-security-oauth/pull/895) ~~and it is waiting to get merged~~.
 
 ## I learned more about HTTP Headers
 In the beginning, I learned about the diversity of HTTP Headers. Being spoiled by all these framework abstraction layers nowadays, it hit me that HTTP Headers are simply yet another interface. And we want to handle all interface interaction in the most resilient way.
@@ -43,7 +45,7 @@ Inspired by some of my colleagues at [Zalando](https://tech.zalando.com/), I sta
 
 Now I am more familiar with the possible appearances of HTTP Headers and the work behind the Spring Security OAuth project.
 
-With my fix in one of the next releases, Spring Security OAuth is going to also be able to handle requests like this:
+~~With my fix in one of the next releases, Spring Security OAuth is going to also be able to handle requests like this:~~
 
 ```
 GET /presence/alice HTTP/1.1
@@ -51,6 +53,7 @@ Host: server.example.com
 Authorization: Basic YXNkZnNhZGZzYWRmOlZLdDVOMVhk, Bearer mF_9.B5f-4.1JqM
 ```
 
+**Update 16.02.2017:** As Joe Grandja (Spring Security Engineer) argued, the user agent is supposed to choose _"only 1 of the challenges (if there is more than 1 challenge) to authenticate against"_, so my pull request was rejected. Feel free to read all the comments in the [corresponding issue](https://github.com/spring-projects/spring-security-oauth/issues/894) for all the details.
 
 ## The simplest piece of work can lead you anywhere
 

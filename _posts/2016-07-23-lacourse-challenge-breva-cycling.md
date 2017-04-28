@@ -4,6 +4,7 @@ title: LaCourse Challenge & Breva Cycling
 permalink: lacourse-challenge-breva-cycling/
 description:
 image: /assets/feature/ostkrone-berlin-jbspeakr.jpg
+category: cycling
 ---
 
 Today, I received my first Strava Badge by completing the _La Course Edition_ of their [Recon Ride](https://www.strava.com/challenges/ReconRide) challenges...

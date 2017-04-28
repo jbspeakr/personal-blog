@@ -40,15 +40,22 @@ layout: default
               {% endif %}
             </span>
           </p>
-          <hr>
-          <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
         </section>
       </div>
       <div class="isRight">
-        <h5 class="index-headline featured"><span>Supported by</span></h5>
+        <h5 class="index-headline featured"><span>Metadata</span></h5>
         <footer class="site-footer">
-          <section class="poweredby">Published with Jekyll.</section>
-          <p>Proudly made without PHP, NodeJS, Postgres and MySQL.</p>
+          <section class="poweredby">
+            Filed under
+            {% assign sortedCategories = page.categories | sort %}
+            {% for category in sortedCategories %}
+                <span class="tag">
+                    #<a href="/category/{{ category }}">{{ category }}</a>
+                </span>
+            {% endfor %}
+          </section>
+          <p>Published on <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>.</p>
+          <p>Built with Jekyll. Proudly made without PHP, NodeJS, Postgres and MySQL.</p>
           <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
           <div class="inner">
             <section class="copyright">All content under CC BY 4.0 &bull; {{ site.time | date: '%Y' }}</section>
@@ -56,5 +63,28 @@ layout: default
         </footer>
       </div>
     </div>
+    {% assign firstCategory = page.categories | first %}
+    {% assign relatedCount = 0 %}
+    {% for related in site.categories[firstCategory] %}
+      {% unless page.permalink == related.permalink %}
+        {% assign relatedCount = relatedCount | plus: 1 %}
+        <div class="bottom-teaser cf">
+          <h5 class="index-headline featured"><span>Also Interesting</span></h5>
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+              <div class="article-item">
+                <header class="post-header">
+                  <h4 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ related.url }}" itemprop="url" title="{{ related.title }}">{{ related.title }}</a></h4>
+                </header>
+                <section class="post-excerpt" itemprop="description">
+                  <p>{{ related.excerpt | strip_html | truncatewords: 50 }}</p>
+                </section>
+              </div>
+            </article>
+        </div>
+      {% endunless %}
+      {% if relatedCount == 1 %}
+           {% break %}
+       {% endif %}
+    {% endfor %}
   </article>
 </main>

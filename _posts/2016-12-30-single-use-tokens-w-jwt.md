@@ -4,6 +4,7 @@ title: Single-Use Tokens w/ JWT
 permalink: howto-single-use-jwt/
 description: Want to use JWT for password-reset or email activation? Turn app state into HMAC-keys to guarantee one-time use of JWTs! This is how it works ...
 image: /assets/feature/jwt.png
+category: appsec
 ---
 
 [**JSON Web Tokens**](https://www.jbspeakr.cc/tag/jwt/) (JWTs) are the new and fancy de-facto standard in the web. JWTs are the tool of choice when it comes to authentication in an stateless environment. That has two direct implications:

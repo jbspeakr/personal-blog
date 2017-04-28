@@ -32,6 +32,18 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
 
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
 jekyll-minifier:
   exclude:
     - 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns

@@ -3,6 +3,7 @@ layout: post
 title: Howto Check Github Licenses
 permalink: github-license-checker/
 description: Github Licker - A Github License Checker.
+category: project
 ---
 
 On Github, every organization with a fast growing open-source codebase quickly figures out a couple of shortcomings regarding the Github web interface. Especially, when it comes to Github organizations that are already around for some time, you often find some information missing that could probably help managing and controlling your organizations repositories...

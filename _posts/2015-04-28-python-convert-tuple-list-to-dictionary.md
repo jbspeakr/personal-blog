@@ -4,6 +4,7 @@ title: 'Python: Convert Tuple List to Dictionary'
 permalink: howto-convert-tuplelist-dictionary/
 description: How to Convert Tuple List to Dictionary in Python...
 image: http://lorempixel.com/600/300/people
+category: coding
 ---
 
 Using [Python Docopt](https://github.com/docopt/docopt) (for beautiful command-line interfaces) I recently had the problem of converting a list of tuples into a dictionary. In this post I'd like to document [the solution](https://gist.github.com/jbspeakr/c7c4fcb9ee143cf7e9eb) I came up with...

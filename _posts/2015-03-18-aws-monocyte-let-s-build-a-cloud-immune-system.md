@@ -4,6 +4,7 @@ title: "AWS Monocyte: Let's Build a Cloud Immune System"
 permalink: aws-cloud-immune-system/
 description: "Monocyte: A AWS Immune System. Comply to EU regulations by finding and deleting AWS resources in regions outside of Europe with AWS Monocyte!"
 image: https://www.jbspeakr.cc/assets/feature/monocyte.jpg
+category: project
 ---
 
 With Ireland and Frankfurt being available as AWS regions nowadays, Amazon (more or less) tried to extinguish EU and especially German legal concerns regarding storage and processing of privacy-related data. However, for European companies it remains difficult to prevent (accidental) usage of services and resources outside the EU, as there is still no standardized way to restrict AWS-account rights on this region-level. Especially in open, [DevOps](https://en.wikipedia.org/wiki/DevOps)-inspired company cultures this becomes a major issue:
