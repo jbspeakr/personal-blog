@@ -21,10 +21,10 @@ layout: default
     </footer>
     <div class="bottom-teaser cf">
       <div class="isLeft">
-        <h5 class="index-headline featured"><span>Written by</span></h5>
+        <div class="index-headline featured"><span>Written by</span></div>
         <section class="author">
           <div class="author-image"></div>
-          <h4>{{ site.name }}</h4>
+          <div class="author-name">{{ site.name }}</div>
           <p class="bio">{{site.bio}}</p>
 
           <p>
@@ -43,7 +43,7 @@ layout: default
         </section>
       </div>
       <div class="isRight">
-        <h5 class="index-headline featured"><span>Metadata</span></h5>
+        <div class="index-headline featured"><span>Metadata</span></div>
         <footer class="site-footer">
           <section class="poweredby">
             Filed under
@@ -69,11 +69,11 @@ layout: default
       {% unless page.permalink == related.permalink %}
         {% assign relatedCount = relatedCount | plus: 1 %}
         <div class="bottom-teaser cf">
-          <h5 class="index-headline featured"><span>Also Interesting</span></h5>
+          <div class="index-headline featured"><span>Also Interesting</span></div>
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
               <div class="article-item">
                 <header class="post-header">
-                  <h4 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ related.url }}" itemprop="url" title="{{ related.title }}">{{ related.title }}</a></h4>
+                  <div class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ related.url }}" itemprop="url" title="{{ related.title }}">{{ related.title }}</a></div>
                 </header>
                 <section class="post-excerpt" itemprop="description">
                   <p>{{ related.excerpt | strip_html | truncatewords: 50 }}</p>

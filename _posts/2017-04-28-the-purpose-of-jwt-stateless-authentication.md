@@ -53,7 +53,7 @@ Stateless authentication describes a system/ process, that enables its component
 
 Also, stateless authentication is able to absolve from the need to keep track of issued tokens and for that reason removes state (and hence reduces storage) dependencies from your system.
 
-The antiquated, heavy-weighted token overlord converges to yet another microservice being mainly responsible for issuing tokens. All of this comes in handy especially when your world mainly consists of single-page applications or mobile clients and services that primarily communicate using RESTful APIs.
+The antiquated, heavy-weighted token overlord converges [to yet another microservice](https://auth0.com/blog/stateless-auth-for-stateful-minds/) being mainly responsible for issuing tokens. All of this comes in handy especially when your world mainly consists of single-page applications or mobile clients and services that primarily communicate using RESTful APIs.
 
 > “Using a JWT as a bearer for authorization, you can statelessly verify if the user is authenticated by simply checking if the expiration in the payload hasn't expired and if the signature is valid.”
 > — <cite><a href="http://jonatan.nilsson.is/stateless-tokens-with-jwt/" title="Stateless tokens with JWT">Jonatan Nilsson</a></cite>
@@ -70,7 +70,7 @@ However there again is no silver bullet and JWTs ain’t Swiss army knifes. Also
 
 Anyway, you probably shouldn't mix both approaches. To shortly answer the questions above:
 
-- There is no way of invalidating a JWT, except if you just use it as yet another random string within a stateful authenticating system,
+- There is no way of invalidating/ revoking a JWT (and [I don't see the point](https://www.dinochiesa.net/?p=1388)), except if you just use it as yet another random string within a stateful authenticating system.
 - There is no way of altering an issued JWT, so prolongating its expiration date is again not possible.
 - You could use JWTs if they really help you solving your issues. You don't have to use them. You can also keep your opaque tokens.
 
