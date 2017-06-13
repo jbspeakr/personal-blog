@@ -5,6 +5,7 @@ permalink: russian-calligraphy-vsiem-nie-ughodish/
 description:
 image: /assets/feature/slavic-calligraphy.png
 category: art
+youtube: true
 ---
 
 _Всем не угодишь_ is an old Russian proverb that basically translates into _You can not please everyone_. I created this work with a Pilot Parallel Pen (6.0mm) and black ink on Modulor Z140 wood-free paper. I chose an old slavic letter style to underline its origins.

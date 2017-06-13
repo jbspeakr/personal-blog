@@ -5,6 +5,7 @@ permalink: microservice-evolution/
 description: Keeping microservices micro is a must if you want to benefit from them.
 image: /assets/feature/microservices.png
 category: architecture
+youtube: true
 ---
 
 Following the common pendulum theory, every tech debate oscillates between at least two currently trending topics. The same is true when it comes to micro-services (vs. integrated systems). My team at ImmobilienScout24.de decided to follow a radical microservices approach, favoring the benefits of smallest possible deployment units over integration (and its advantages) and preferring infrastructure as well as communication complexity over tight coupling. Why we chose to do so and how we make sure to keep our services micro, I'm going to explain in more detail...

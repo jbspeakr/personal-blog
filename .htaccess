@@ -27,6 +27,7 @@ Redirect 301 /2015/03/25/github-license-checker.html/ https://www.jbspeakr.cc/gi
 Redirect 301 /2016/01/18/aws-dynamodb-backup-recovery.html/ https://www.jbspeakr.cc/aws-dynamodb-backup-recovery/
 
 <FilesMatch "\\.(js|css|html|htm|php|xml)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
 SetOutputFilter DEFLATE
 </FilesMatch>
 
