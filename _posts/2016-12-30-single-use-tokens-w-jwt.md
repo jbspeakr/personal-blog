@@ -7,9 +7,9 @@ image: /assets/feature/jwt.png
 category: appsec
 ---
 
-[**JSON Web Tokens**](https://www.jbspeakr.cc/tag/jwt/) (JWTs) are the new and fancy de-facto standard in the web. JWTs are the tool of choice when it comes to authentication in an stateless environment. That has two direct implications:
+**Self-contained JWTs can be used as one-time tokens. I'll show when this makes sense & how to implement it.**
 
-<p class="subtitle">Self-contained JWTs can be used as one-time tokens. I'll show when this makes sense & how to implement it.</p>
+[JSON Web Tokens](https://www.jbspeakr.cc/tag/jwt/) (JWTs) are the new and fancy de-facto standard in the web. JWTs are the tool of choice when it comes to authentication in an stateless environment. That has two direct implications:
 
 - You should definitely go and get some [proper introduction](https://jwt.io/introduction/) on **how JSON Web Token work**. It's worth to know as JWTs are widely used for e.g. authentication against REST-APIs.
 - Second, as JWTs are still fresh, hot and simply fancy, some people think they are some kind of holy Swiss army knife and can be used to solve every possible use-case... they are not!
