@@ -11,7 +11,7 @@ category: appsec
 
 [JSON Web Tokens](https://www.jbspeakr.cc/tag/jwt/) (JWTs) are the new and fancy de-facto standard in the web. JWTs are the tool of choice when it comes to authentication in an stateless environment. That has two direct implications:
 
-- You should definitely go and get some [proper introduction](https://jwt.io/introduction/) on **how JSON Web Token work**. It's worth to know as JWTs are widely used for e.g. authentication against REST-APIs.
+- You should definitely go and get some [proper introduction](https://jwt.io/introduction/) on the [purpose of JSON Web Tokens](https://www.jbspeakr.cc/purpose-jwt-stateless-authentication/) and some insights on how they work. It's worth to know as JWTs are widely used for e.g. authentication against REST-APIs.
 - Second, as JWTs are still fresh, hot and simply fancy, some people think they are some kind of holy Swiss army knife and can be used to solve every possible use-case... they are not!
 
 ## JWT Ain't Swiss Army
@@ -41,4 +41,4 @@ So let's sum up our findings on how to implement single-use tokens based on JWT.
 - First, there is no need to setup some kind of token-registry storage. This would counter the idea of stateless, self-contained tokens anyway.
 - Instead, compose signature secrets based on values that change after each token usage. In other words: **Turn app state into HMAC-keys to guarantee one-time use of JWTs!**
 
-In theory, this also works with use-cases besides password-reset tokens e.g. email activation, account confirmation etc. However, my thoughts took shape while solving this specific issue. If you know other approaches to achieve single-use JWTs do not hesitate to write a comment. I also appreciate feedback and further discussion. Thanks!
+In theory, this also works with use-cases besides password-reset tokens e.g. email activation, account confirmation etc. However, my thoughts took shape while solving this specific issue. If you know other approaches to achieve single-use JWTs do not hesitate to drop me message [via Twitter](https://www.twitter.com/jbspeakr). I also appreciate feedback and further discussion. Thanks!
