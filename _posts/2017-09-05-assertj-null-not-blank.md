@@ -22,7 +22,7 @@ With [Apache Commons StringUtils](https://commons.apache.org/proper/commons-lang
 
 > “A blank String is a CharSequence that is empty (""), null or whitespace only.”
 
-While recently investigating a bug in one of our systems, I stumbled upon a slight divergent and unexpected string handling in AssertJ, a fluent assertions framework for Java. This [AssertJ misbehaviour](https://github.com/joel-costigliola/assertj-core/issues/1069) has potential to lead to severe troubles – whih is why I would argue it's a bug. As it turns out,  
+While recently investigating a bug in one of our systems, I stumbled upon a slight divergent and unexpected string handling in AssertJ, a fluent assertions framework for Java. This [AssertJ misbehaviour](https://github.com/joel-costigliola/assertj-core/issues/1069) has potential to lead to severe troubles – which is why I would argue it's a bug. As it turns out,  
 
 ```
 String s = null;

@@ -10,7 +10,7 @@ title: jbspeakr.cc
 subtitle: Clean Code. Web. Security.
 email: jan@brennenstuhl.me
 description: >
-  Jan Brennenstuhl about application security, identity management & authorization concepts. With opinions about OAuth, JWT and clean code web development.
+  Jan Brennenstuhl about application security, web development and clean coding practises. With opinions about OAuth, JWT and modern software development.
 logo: "/assets/images/jbspeakr-logo.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jbspeakr.cc" # the base hostname & protocol for your site
