@@ -7,7 +7,7 @@ image: assets/images/toilet-rolls.jpg
 category: coding
 ---
 
-__TL;DR – Using AssertJ can lead to severe issues (or at least unexpected behaviour) in your code. The assertions framework for unit testing handles NULL-values different from what is comonly expected...__
+__TL;DR – Using AssertJ can lead to severe issues (or at least unexpected behaviour) in your code. The assertions framework for unit testing handles NULL-values different from what is commonly expected...__
 
 Try it yourself: Google “how to check for blank string” – I got about 44 million results. Strings are probably the most common data structures we programmers hand around. In the cross-language String-environment there are well established meanings and commonly shared understandings. 
 
