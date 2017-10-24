@@ -22,13 +22,13 @@ With [Apache Commons StringUtils](https://commons.apache.org/proper/commons-lang
 
 > “A blank String is a CharSequence that is empty (""), null or whitespace only.”
 
-While recently investigating a bug in one of our systems, I stumbled upon a slight divergent and unexpected string handling in AssertJ, a fluent assertions framework for Java. This [AssertJ misbehaviour](https://github.com/joel-costigliola/assertj-core/issues/1069) has potential to lead to severe troubles – which is why I would argue it's a bug. As it turns out,  
+While recently investigating a bug in one of our systems, I stumbled upon a slight divergent and unexpected string handling in AssertJ, a fluent assertions framework for Java. This [AssertJ misbehaviour](https://github.com/joel-costigliola/assertj-core/issues/1069) has potential to lead to severe troubles – which is why I would argue it's a bug. As it turns out ...  
 
 ```
 String s = null;
 assertThat(s).isNotBlank();
 ```
 
-passes. This is not expected behaviour because (following the definition above) a null string is commonly considered to be a blank string and vise-versa. So if you're also used to Apache Commons StringUtils and Hibernate Validators behaviour, you wanna make sure your tests actually also expect the correct behaviour.
+... passes. This is definitely not expected behaviour, since (following the definition above) a null string is commonly considered to be a blank string and vise-versa. So if you're also used to Apache Commons StringUtils and Hibernate Validators behaviour, you wanna make sure your tests actually also expect the correct behaviour.
 
 Do you know further libraries that follow a different blank string definition or if you have a different opinion about all of this, drop me message [via Twitter](https://www.twitter.com/jbspeakr)!
