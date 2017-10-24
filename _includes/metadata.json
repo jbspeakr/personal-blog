@@ -34,8 +34,6 @@
   },
   "image": {
     "@type": "ImageObject",
-    "url": "{{ site.logo | prepend: site.baseurl | prepend: site.url }}",
-    "height": "60",
-    "width": "60"
+    "url": "{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}",
   }
 }

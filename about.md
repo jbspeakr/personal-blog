@@ -4,8 +4,6 @@ title: About Jan Brennenstuhl
 permalink: jan-brennenstuhl/
 ---
 
-<amp-img width="600" height="300" layout="responsive" src="http://lorempixel.com/600/300/sports"></amp-img>
-
 Hi. My name is Jan Brennenstuhl, I live and work in Berlin Germany, where I was born and raised. I am a full-stack web developer, computer security enthusiast & clean code artist with a huge interest in interdisciplinary, agile software development and the open web. I am a big fan of urban art, coffee & cycling.
 
 I currently work for **Zalando SE** in Berlin as a member of the tech infrastructure platform where we create "tools for the builders". We are currently rethinking the companies core identity and access management solution.
