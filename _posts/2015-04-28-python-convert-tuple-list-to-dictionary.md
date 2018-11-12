@@ -3,7 +3,6 @@ layout: post
 title: 'Python: Convert Tuple List to Dictionary'
 permalink: howto-convert-tuplelist-dictionary/
 description: How to Convert Tuple List to Dictionary in Python...
-image: http://lorempixel.com/600/300/people
 category: coding
 ---
 

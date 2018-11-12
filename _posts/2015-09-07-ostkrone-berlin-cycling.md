@@ -3,7 +3,6 @@ layout: post
 title: Ostkrone - Berlin Cycling Route
 permalink: ostkrone-berlin-cycling-route/
 description: Riding my bike through the sun along Berlins Crown of the East.
-image: http://lorempixel.com/600/300/people
 category: cycling
 youtube: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "AWS Monocyte: Let's Build a Cloud Immune System"
 permalink: aws-cloud-immune-system/
 description: "Monocyte: A AWS Immune System. Comply to EU regulations by finding and deleting AWS resources in regions outside of Europe with AWS Monocyte!"
-image: https://www.jbspeakr.cc/assets/feature/monocyte.jpg
+image: /assets/feature/monocyte.jpg
 category: project
 ---
 

@@ -3,7 +3,6 @@ layout: post
 title: Datensparsam.de & the Principle of Data Economy
 permalink: principle-data-economy/
 description: The 1st Principle of Data Economy - With Datensparsam.de I established Germany's first civic app focussing on the first principle of data economy.
-image: http://lorempixel.com/600/300/people
 category: project
 ---
 

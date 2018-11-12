@@ -3,7 +3,7 @@ layout: post
 title: "Brute-Force Defense: Preventing Customer Account Hacking"
 permalink: bruteforce-login-attack-defense/
 description: "Brute-force attacks are the most common and wide-spread security threats not just to eCommerce but all restricted areas on the web. Let's see how to defend..."
-image: assets/images/brute-force-attack.png
+image: /assets/images/brute-force-attack.png
 category: appsec
 ---
 
