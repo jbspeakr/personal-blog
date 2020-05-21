@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: jbspeakr.cc
-subtitle: Clean Code. Web. Security.
+title: Jan Brennenstuhl
+subtitle: Clean Code. Web Engineering. Application Security.
 email: jan@brennenstuhl.me
 description: >
   Jan Brennenstuhl about application security, web development and clean coding practises. With opinions about OAuth, JWT and modern software development.
@@ -18,8 +18,8 @@ paginate:	5 # The number of posts to show per page on your homepage
 
 name: 'Jan Brennenstuhl'
 bio: >
-  Jan is a full-stack web developer, computer security enthusiast &amp; clean code artist.
-  He lives in Berlin, is currently working for Zalando SE and loves urban art, coffee &amp; cycling.
+  Jan is a software engineer, web security enthusiast &amp; clean code artist.
+  He lives in Berlin, is currently working for Zalando SE and loves his bonsai trees, coffee &amp; road cycling.
 author_image: "/assets/images/jan-brennenstuhl.jpg"
 twitter_username: jbspeakr
 github_username:  jbspeakr
@@ -54,7 +54,7 @@ jekyll-minifier:
 include:
   - '_redirects'
 
-gems:
+plugins:
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-paginate
