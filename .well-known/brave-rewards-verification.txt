@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jbspeakr.cc
+Token: c3716a984b60bdeb5c68bd4cdd9efebe3df7e678e6727dfedf7dc41920d6d416

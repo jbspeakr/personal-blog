@@ -53,6 +53,7 @@ jekyll-minifier:
 
 include:
   - '_redirects'
+  - '.well-known'
 
 plugins:
   - jekyll-minifier
