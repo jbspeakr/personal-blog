@@ -4,7 +4,7 @@ title: About Jan Brennenstuhl
 permalink: jan-brennenstuhl/
 ---
 
-Hi. My name is Jan Brennenstuhl, I live and work in Berlin Germany, where I was born and raised. I am a product-minded software engineer, web security enthusiast & clean code artist with a huge interest in interdisciplinary software development and engineering leadership. I am a big fan of bonsai cultivation techniques, coffee, hiking & road cycling.
+Hi. My name is Jan Brennenstuhl, I live and work in Berlin Germany, where I was born and raised. I am a product-minded software engineer, web security enthusiast & clean code artist with a huge interest in interdisciplinary software development and engineering leadership. I am a big fan of bonsai cultivation techniques, coffee, <a href="https://www.rucksackrebellen.de" title="Rucksackrebellen Wander-Blog">hiking & road cycling</a>.
 
 I currently work for **Zalando SE** in Berlin as a member of the information security unit where me and my team of engineers work on a central SSO solution for our customers. We are currently disrupting the companies customer identity and access management solutions.
 
